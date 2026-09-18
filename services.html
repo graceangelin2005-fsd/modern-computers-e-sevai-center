@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Computers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <img src="Logo.png" alt="Logo">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <center>
+        <h1 id="welcome">Services</h1>
+    </center>
+    <div class="container">
+
+    <div class="service-cards">
+
+        <div class="E-Sevai">
+            <h2>E-Sevai Services</h2>
+            <ul type="none" class="services">
+                <li>Income Certificate</li>
+                <li>Community Certificate</li>
+                <li>Nativity Certificate</li>
+                <li>Patta Transfer</li>
+                <li>Patta Sub-Division</li>
+                <li>Pension Application</li>
+                <li>Disability Scholarships</li>
+            </ul>
+        </div>
+
+        <div class="CSC">
+            <h2>CSC Services</h2>
+            <ul type="none" class="services">
+                <li>PAN Card</li>
+                <li>Passport</li>
+                <li>Crop Insurance</li>
+                <li>PM Kissan</li>
+                <li>e-Shram</li>
+                <li>Udyam Registration</li>
+                <li>PMJAY</li>
+            </ul>
+        </div>
+
+        <div class="DTP">
+            <h2>Computer Services</h2>
+            <ul type="none" class="services">
+                <li>DTP</li>
+                <li>Lamination</li>
+                <li>Printout</li>
+                <li>Scanning</li>
+                <li>Colour Print</li>
+                <li>Xerox</li>
+                <li>Online Applications</li>
+            </ul>
+        </div>
+        <div class="GeneralServices">
+            <h2>General Services</h2>
+            <ul type="none" class="services">
+                <li>Employment Registration</li>
+                <li>Aadhar Card Printout</li>
+                <li>Voter ID</li>
+                <li>EPF Services</li>
+                <li>Aadhar Pan Link</li>
+                <li>Birth & Death Certificate Printout</li>
+            </ul>
+        </div>
+    </div>
+    <div class="button">
+        <a href="contact.html">
+            <button>Contact</button>
+        </a>
+    </div>
+    <div class="choice">
+            <form>
+                <label>Choose Certificate:</label>
+                <select id="Certificate">
+                    <option value="">Select</option>
+                    <option value="income">Income Certiicate</option>
+                    <option value="community">Community Certiicate</option>
+                    <option value="nativity">Nativity Certiicate</option>
+                    <option value="OBC">OBC Certiicate</option>
+                    <option value="FirstGraduate">First Graduate Certiicate</option>
+                    <option value="Widow">Widow Certificate</option>
+                    <option value="WidowPension">Widow Pension</option>
+                    <option value="OAP">Old Age Pension</option>
+                    <option value="Scholarship">Disability Scholarship for Students</option>
+                    <option value="Disability">Disability Pension</option>
+                    <option value="PAN">PAN Card</option>
+                    <option value="Crop">Crop Insurance</option>
+                    <option value="VoterID">Voter ID</option>
+                </select>
+                <center><button type="button" id="ok" onclick="showDocuments()">Ok</button></center>
+                <div id="documents">
+
+                </div>
+            </form>
+        </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+ 
+   

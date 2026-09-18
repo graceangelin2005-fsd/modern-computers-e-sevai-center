@@ -1,0 +1,323 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+header{
+    border:5px solid black;
+    border-radius:25px;
+    padding:15px 30px;
+    margin:20px;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+}
+
+nav img{
+    height:50px;
+    margin-right:auto;   /* Pushes all links to the right */
+}
+
+nav a{
+    text-decoration:none;
+    color:darkblue;
+    font-size:25px;
+    margin:0 20px;
+    position: relative;
+}
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: blue;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+a:hover{
+    color:black;
+}
+.language-switch {
+    padding: 8px 12px;
+    border: 1px solid #007bff;
+    border-radius: 6px;
+    background-color: white;
+    color: #333;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    margin-left: 15px;
+}
+
+.language-switch:hover {
+    border-color: #0056b3;
+}
+
+.language-switch:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+#welcome{
+    font-size:60px;
+    margin:30px;
+    color:Green;
+    font-family: 'balloon';
+    font-weight: lighter;
+}
+#Title{
+ color:blue;
+ font-size:50px;
+ font-style:italic;
+ font-family:'Brush Script MT'; 
+}
+.home{
+    border:5px solid black;
+    border-radius:10%;
+    width:70%; 
+    margin-left:15%;
+    margin-top:30px;
+    margin-bottom: 100px;
+    padding:30px;
+    box-shadow:inset 0 0 10px;
+}
+#Introduction{
+    font-size: 30px;
+    text-align: justify;
+    font-size:32px;
+    padding:20px;
+    font-style: italic;
+    color:black;
+    text-indent: 70px;
+}
+button{
+    background-color:blue;
+    padding: 10px;
+    border-radius:10px;
+    border:none;
+    color:white;
+    cursor:pointer;
+    font-size:25px;
+    align-items:center;
+    display: flex;
+    flex-direction:column;
+    transition:all 0.3s ease;
+    margin-bottom:50px;   
+}
+a{
+    text-decoration:none;
+}
+button:hover{
+    padding:13px;
+    font-size:28px; 
+}
+.container
+{
+    width:90%;
+    margin:5%;
+    padding:30px;
+}
+
+.service-cards, .contact
+{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:flex-start;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.E-Sevai,.CSC,.DTP, .GeneralServices, .Address, .Phone, .Email
+{
+    width:20%;
+    padding:30px;
+    border:5px solid black;
+    border-radius:30px;
+    box-shadow:0 0 10px black;
+    color:black;
+    font-size:25px;
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+.E-Sevai:hover,.CSC:hover,.DTP:hover, .GeneralServices:hover, .Address:hover, .Phone:hover, .Email:hover
+{
+    transform:scale(1.05);
+    box-shadow:0 0 20px black;
+}
+.button{
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    margin-top:50px;
+}
+.services{
+    text-align:center;
+}
+h2{
+    color:blue;
+    text-align: center;
+    font-size:30px;
+}
+.choice{
+    margin-top:20px;
+    margin-bottom:300px;
+    text-align:center;
+}
+.choice select{
+    padding:10px;
+    border-radius:10px;
+    border:2px solid black;
+
+}
+label{
+    color:black;
+    font-size:30px;
+    margin-bottom:10px;
+}
+#ok{
+    padding: 5px 20px;
+    border-radius: 10px;;
+    margin:30px;
+}
+#documents{
+    width:60%;
+    margin:30px auto;
+    padding:20px;
+    border:2px solid green;
+    border-radius:10px;
+    display:none;
+}
+
+#documents h2{
+    color:green;
+    margin-bottom:10px;
+}
+
+#documents ul{
+    line-height:1.8;
+    font-size:20px;
+    color:darkblue;
+}
+#documents p{
+    color:red;
+    font-size:20px;
+}
+.about {
+    width: 80%;
+    margin: 50px auto;
+    padding: 40px 50px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* About Paragraphs */
+#about1,
+#about2,
+#Mission,
+#Vission {
+    padding: 10px 20px;
+    margin-bottom: 25px;
+    text-align: justify;
+    text-indent: 40px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333333;
+    font-style: normal;
+}
+
+/* Section Headings */
+#OurMission,
+#OurVision,
+#Highlights {
+    color: #00695c;
+    font-size: 26px;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    position: relative;
+}
+
+/* Heading Underline */
+#OurMission::after,
+#OurVision::after,
+#Highlights::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 8px auto 0;
+    border-radius: 5px;
+}
+
+/* Service Highlights */
+.Highlights {
+    list-style: none;
+    padding: 0;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 900px;
+}
+
+/* Individual Highlight */
+.Highlights li {
+    padding: 15px 20px;
+    background-color: #f5f9ff;
+    border-left: 4px solid #007bff;
+    border-radius: 8px;
+    font-size: 17px;
+    color: #333333;
+    font-style: normal;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Highlight Hover */
+.Highlights li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.15);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+    .about {
+        width: 90%;
+        padding: 25px 20px;
+        margin: 30px auto;
+    }
+
+    #about1,
+    #about2,
+    #Mission,
+    #Vission {
+        font-size: 16px;
+        line-height: 1.7;
+        padding: 5px;
+        text-indent: 25px;
+    }
+
+    #OurMission,
+    #OurVision,
+    #Highlights {
+        font-size: 22px;
+    }
+
+    .Highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .Highlights li {
+        font-size: 16px;
+    }
+}

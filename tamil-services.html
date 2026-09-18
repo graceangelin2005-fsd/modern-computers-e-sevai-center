@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Computers</title>
+    <link rel="stylesheet" href="tamil-style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <img src="Logo.png" alt="Logo">
+            <a href="tamil-index.html">முகப்பு</a>
+            <a href="tamil-services.html">சேவைகள்</a>
+            <a href="tamil-about.html">எங்களைப் பற்றி</a>
+            <a href="tamil-contact.html">தொடர்பு விவரங்கள்</a>
+        </nav>
+    </header>
+    <center>
+        <h1 id="welcome">சேவைகள்</h1>
+    </center>
+    <div class="container">
+
+    <div class="service-cards">
+
+        <div class="E-Sevai">
+            <h2>இ-சேவை சேவைகள்</h2>
+            <ul type="none" class="services">
+                <li>வருமானச் சான்றிதழ்</li>
+                <li>சமூகச் சான்றிதழ்</li>
+                <li>இருப்பிடச் சான்றிதழ்</li>
+                <li>பட்டா மாற்றம்</li>
+                <li>பட்டா உட்பிரிவு</li>
+                <li>ஓய்வூதிய விண்ணப்பம்</li>
+                <li>மாற்றுத்திறனாளிகளுக்கான கல்வி உதவித்தொகை</li>
+            </ul>
+        </div>
+
+        <div class="CSC">
+            <h2>சி.எஸ்.சி சேவைகள்</h2>
+            <ul type="none" class="services">
+                <li>பான் அட்டை</li>
+                <li>பாஸ்போர்ட்</li>
+                <li>பயிர் காப்பீடு</li>
+                <li>PM கிசான்</li>
+                <li>இ-ஷ்ரம்</li>
+                <li>உத்யம் பதிவு</li>
+                <li>பிரதமர் காப்பீடு(PMJAY)</li>
+            </ul>
+        </div>
+
+        <div class="DTP">
+            <h2>கணினி சேவைகள்</h2>
+            <ul type="none" class="services">
+                <li>டிடிபி</li>
+                <li>லாமினேஷன்</li>
+                <li>பிரிண்ட் அவுட்</li>
+                <li>ஸ்கேனிங்</li>
+                <li>கலர் பிரிண்ட்</li>
+                <li>ஜெராக்ஸ்</li>
+                <li>ஆன்லைன் அப்ளிகேஷன்கள்</li>
+            </ul>
+        </div>
+        <div class="GeneralServices">
+            <h2>பொது சேவைகள்</h2>
+            <ul type="none" class="services">
+                <li>எம்ப்ளாய்மென்ட் பதிவு</li>
+                <li>ஆதார் அட்டை பிரிண்ட் அவுட்</li>
+                <li>வாக்காளர் அடையாள அட்டை</li>
+                <li>இபிஎஃப் சேவைகள்</li>
+                <li>ஆதார் - பான் இணைப்பு</li>
+                <li>பிறப்பு மற்றும் இறப்பு சான்றிதழ் பிரிண்ட் அவுட்</li>
+            </ul>
+        </div>
+    </div>
+    <div class="button">
+        <a href="tamil-contact.html">
+            <button>தொடர்பு விவரங்கள்</button>
+        </a>
+    </div>
+    <div class="choice">
+            <form>
+                <label>சான்றிதழைத் தேர்ந்தெடுக்கவும்:</label>
+                <select id="Certificate">
+                    <option value="">தேர்ந்தெடுக்கவும்</option>
+                    <option value="income">வருமானச் சான்றிதழ்</option>
+                    <option value="community">சாதிச் சான்றிதழ்</option>
+                    <option value="nativity">இருப்பிடச் சான்றிதழ்</option>
+                    <option value="OBC">ஓ.பி.சி சான்றிதழ்</option>
+                    <option value="FirstGraduate">முதல் பட்டதாரி சான்றிதழ்</option>
+                    <option value="Widow">விதவைச் சான்றிதழ்</option>
+                    <option value="WidowPension">விதவை ஓய்வூதியம்</option>
+                    <option value="OAP">முதியோர் ஓய்வூதியம்</option>
+                    <option value="Scholarship">மாணவர்களுக்கான மாற்றுத்திறனாளி கல்வி உதவித்தொகை</option>
+                    <option value="Disability">மாற்றுத்திறனாளி ஓய்வூதியம்</option>
+                    <option value="PAN">பான் அட்டை</option>
+                    <option value="Crop">பயிர் காப்பீடு</option>
+                    <option value="VoterID">வாக்காளர் அடையாள அட்டை</option>
+                </select>
+                <center><button type="button" id="ok" onclick="showDocuments()">சரி</button></center>
+                <div id="documents">
+
+                </div>
+            </form>
+        </div>
+</div>
+<script src="tamil-script.js"></script>
+</body>
+</html>
+ 
+   
